@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+}
+
+.contenedor {
+    background:red;
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+
+    /* Flexbox */
+    display:flex;
+    flex-flow:row wrap;
+}
+
+body {
+  background-color: ORANGE;
+}
+ </style>
+    </head>
+    <body>
+        
+        <section id="formulario">
+            <form name="frmregistro" method="post" action="mailto:elianacorazon21@gmail.com">
+                <h1>FORMULARIO DE PEDIDO</h1>
+                <label id="label">Complete el formulario con sus datos</label>
+                <p id="linea">&nbsp;</p>
+
+                <label id="label">Nombres y apellidos
+                    <input name="txtnombres" type="text" 
+                           id="caja" size="60" 
+                           placeholder="ingrese datos completos" required/>
+                </label>
+                <label id="label">Dni 
+                    <input type="text" id="caja" name="txtdni" 
+                           size="60" placeholder="8 caracteres" required=>
+                </label>
+                <label id="label">Teléfono 
+                    <input type="tel" id="caja" size="60" name="txtfono"/>
+                </label>
+
+                <label id="label">Tipo de juguete</label>
+                <label id="label">
+                    <input type="checkbox" name="chkfísicos" 
+                           checked="checked"/> Físicos
+                </label>
+                <label id="label">
+                    <input type="checkbox" name="chkmanipulativos" /> Manipulativos 
+                </label>
+                <label id="label">
+                    <input type="checkbox" name="chkeducativos" /> Educativos 
+                </label>
+                <label id="label">
+                    <input type="checkbox" name="chkengrupo" /> En grupo
+                </label>
+                <br/>
+
+                <label id="label">Marcas requeridas</label>
+                <label id="label"> 
+                    <input type="radio" name="btnestado" value="f" /> Fisher-Price
+                </label>
+                <label id="label"> 
+                    <input type="radio" name="btmarca" value="b" /> Barbie
+                </label>
+                <label id="label"> 
+                    <input type="radio" name="btmarca" value="h" /> Hasbro Gaming
+                </label>
+                <label id="label"> 
+                    <input type="radio" name="btmarca" value="p" /> Play Doh
+                </label>
+                <label id="label"> 
+                    <input type="radio" name="btmarca" value="m" /> Monopoly
+                </label>
+                <label id="label"> 
+                    <input type="radio" name="btmarca" value="h" /> Hot-Wheels
+                </label>
+                <br/>
+
+                <table align="left">
+                <tr>
+                <td width="80%" align="right">
+                Descripción del pedido:
+                </td>
+                <td width="80%" alignn="left">
+                <input type="text" Descripción="Pedido" size="55"
+                maxlength="100">
+                </td>
+                </tr>
+                <tr>
+                <td width="50%" align="right">
+                <input type="submit" value="Enviar">
+                </td>
+                <td width="50%" align="left">
+                <input type="reset" value="Borrar">
+                </td>
+                </tr>
+                </table>
+                <label id="label">Correo electronico 
+                    <input type="email" id="caja" size="60" name="txtemail"/>
+                </label>
+                            
+                <input type="submit" value="registrar">
+                <input type="reset" value="limpiar">
+        <nav>
+                <a href="index.html">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="NOSOTROS.html">Nosotros</a>
+                <a href="FORMULARIO DE PEDIDO.html">Pedidos</a>
+            </nav>
+
+            </form>
+        </section>
+    </body>
